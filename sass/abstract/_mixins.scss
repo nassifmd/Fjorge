@@ -1,0 +1,60 @@
+// @mixin clearfix {
+//   &::after {
+//     content: "";
+//     display: table;
+//     clear: both;
+//   }
+// }
+
+// @mixin absCenter {
+//   position: absolute;
+//   top: 50%;
+//   left: 50%;
+//   transform: translate(-50%, -50%);
+// }
+
+// responsiveness
+@mixin respond($breakpoint) {
+  @if $breakpoint== xsm-phone {
+    @media (max-width: 350px) {
+      @content;
+    }
+  }
+  @if $breakpoint== sm-phone {
+    @media (max-width: 450px) {
+      @content;
+    }
+  }
+  @if $breakpoint== smx-phone {
+    @media (max-width: 550px) {
+      @content;
+    }
+  }
+  @if $breakpoint== phone {
+    @media (max-width: 600px) {
+      @content;
+    }
+  }
+  @if $breakpoint== phone-big {
+    @media (max-width: 650px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == tab-port {
+    @media (max-width: 768px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == tab-land {
+    @media (max-width: 1000px) {
+      @content;
+    }
+  }
+  @if $breakpoint == bigger-scr {
+    @media (max-width: 1236px) {
+      @content;
+    }
+  }
+}

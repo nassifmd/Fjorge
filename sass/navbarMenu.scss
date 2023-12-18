@@ -1,0 +1,55 @@
+.smallNav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  z-index: 5;
+}
+
+.smHeader {
+  display: none;
+
+  @include respond(phone) {
+    display: flex;
+  }
+}
+
+.navbarMenu {
+  background-color: $THEME_COLOR;
+  width: 100%;
+  min-height: 100vh;
+  padding: 1rem;
+  box-sizing: border-box;
+  // z-index: 5;
+  // display: none;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    i {
+      color: white;
+      font-size: 30px;
+    }
+    &__logo {
+      width: 50px;
+    }
+  }
+  &__links {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    &__link {
+      margin-bottom: 2rem;
+      color: white;
+      text-decoration: none;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}

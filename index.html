@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+      integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+      integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Fjorge</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body>
+    <main class="home">
+      <header class="home__navbarSmall smHeader">
+        <img src="./assets/logo.png" alt="logo" class="home__navbarSmall__image" />
+        <i
+          id="burger"
+          class="fa fa-bars"
+          style="color: white; font-size: 25px"
+        ></i>
+      </header>
+
+      <div class="navbarMenu smallNav" id="smallNav">
+        <div class="navbarMenu__header">
+          <img
+            src="./assets/logo.png"
+            alt="logo"
+            class="navbarMenu__header__logo"
+          />
+          <i class="fa fa-times" id="crossIcon" aria-hidden="true"></i>
+        </div>
+        <div class="navbarMenu__links">
+          <a class="navbarMenu__links__link" href="#">Work</a>
+          <a class="navbarMenu__links__link" href="#">About</a>
+          <a class="navbarMenu__links__link" href="#">Blog</a>
+          <a class="navbarMenu__links__link" href="#">Contact Us</a>
+        </div>
+      </div>
+
+      <div class="slider-container">
+        <div class="home__slider__slide__chevrons">
+          <i class="fa fa-chevron-left" id="fa-chevron-left-1"></i>
+          <i class="fa fa-chevron-right" id="fa-chevron-right-1"></i>
+        </div>
+        <div class="home__slider__slide__bars">
+          <div
+            class="home__slider__slide__bars__bar slide-bar-1 bar--active"
+            id="slide-bar-1"
+          ></div>
+          <div
+            class="home__slider__slide__bars__bar slide-bar-2"
+            id="slide-bar-2"
+          ></div>
+        </div>
+        <section class="home__slider">
+          <div class="home__slider__slide">
+            <img
+              src="./assets/slide-1.png"
+              alt="slide-1"
+              class="home__slider__slide__image1"
+            />
+            <div class="home__slider__slide__text">
+              <h1>
+                We never stop looking <br />
+                for great talent.
+              </h1>
+
+              <a class="home__slider__slide__text__link" href="#"
+                >Learn more
+                <img src="./assets/chevron-down-regular.svg" alt="slide-2" />
+              </a>
+            </div>
+          </div>
+          <div class="home__slider__slide">
+            <img
+              src="./assets/slide-2.png"
+              alt="slide-2"
+              class="home__slider__slide__image1"
+            />
+          </div>
+        </section>
+      </div>
+      <header class="home__navbarLarge">
+        <img src="./assets/logo.png" alt="nav-logo" class="home__navbarLarge__image" />
+        <ul class="home__navbarLarge__links">
+          <li class="home__navbarLarge__links__link" href="#">Work</li>
+          <li class="home__navbarLarge__links__link" href="#">About</li>
+          <li class="home__navbarLarge__links__link" href="#">Blog</li>
+          <li class="home__navbarLarge__links__link" href="#">Contact Us</li>
+        </ul>
+      </header>
+      <section class="home__body">
+        <div class="home__body__headings">
+          <h1 class="home__body__headings__heading">
+            Benefits of joining team
+          </h1>
+          <span class="home__body__headings__border">____</span>
+        </div>
+        <div class="home__body__benefits">
+          <div class="home__body__benefits__benefit">
+            <img src="./assets/noun_Money_1346217_a5a4a4@2x.png" alt="money" />
+            <span
+              >Competitive pay & <br />
+              overtime</span
+            >
+          </div>
+          <div class="home__body__benefits__benefit">
+            <img src="./assets/noun_medical_1171371_a5a4a4@2x.png" alt="medical" />
+            <span
+              >Health insurance <br />
+              options</span
+            >
+          </div>
+          <div class="home__body__benefits__benefit">
+            <img src="./assets/noun_Piggy Bank_1800106_a5a4a4@2x.png" alt="piggy_bank" />
+            <span
+              >40ik matching <br />
+              programe</span
+            >
+          </div>
+          <div class="home__body__benefits__benefit">
+            <img src="./assets/noun_Sun smiling_1002018_a5a4a4@2x.png" alt="smiling" />
+            <span
+              >PTO and paid <br />
+              holidays</span
+            >
+          </div>
+        </div>
+        <div class="home__body__benefits">
+          <div class="home__body__benefits__benefit">
+            <img src="./assets/noun_Trophy_978450_a5a4a4@2x.png" alt="noun_Trophy" />
+            <span
+              >Monthly rewards & <br />
+              team building</span
+            >
+          </div>
+          <div class="home__body__benefits__benefit">
+            <img
+              src="./assets/Subtraction 4@2x.png"
+              width="100px"
+              alt="Subtraction"
+              class="home__body__benefits__benefit__image"
+            />
+            <span
+              >Free snacks and <br />
+              beverages</span
+            >
+          </div>
+          <div class="home__body__benefits__benefit">
+            <img src="./assets/noun_ping pong_324414_a5a4a4@2x.png" alt="noun_ping pong" />
+            <span
+              >Fjing fjong (Trust us <br />
+              You'll love it)</span
+            >
+          </div>
+          <div class="home__body__benefits__benefit">
+            <img src="./assets/noun_Apple_1426921_a5a4a4@2x.png" alt="apple" />
+            <span
+              >Multiscreen <br />
+              workspace & macbook</span
+            >
+          </div>
+        </div>
+      </section>
+      <footer class="home__footer">
+        <img
+          src="./assets/logo-alternate@2x.png"
+          alt="footer-logo"
+          class="home__footer__image"
+        />
+      </footer>
+    </main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+      integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
